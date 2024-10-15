@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Line load</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-form">
+            <div class="form">
+                <div class="welcom-text">
+                    <div class="title">Привет!</div>
+                    <div class="subtitle">Дай мне скушать json и даты</div>
+                </div>
+                <label class="input-file">
+                    <input type="file" name="file" id="loadJson" accept=".json">		
+                    <span>Выберите файл</span>
+                </label>
+
+                <label for="startDataRule">Дата начала:</label>
+                <input type="date" name="startDataRule" id="startDataRule" class="input">
+
+                <label for="endDataRule">Дата конца:</label>
+                <input type="date" name="endDataRule" id="endDataRule" class="input">
+
+                <label for="loginTg">Логин ТГ:</label>
+                <input type="text" name="loginTg" id="loginTg" value="YaNotifyBot" class="input">
+                <button id="processButton" class="submit">Получить эксельку</button>
+            </div>
+            <div class="info-block">
+                <button class="submit info" id="info_button">А что делать дальше?</button>
+            </div>
+        </div> 
+        <div class="container-info">
+            <div class="infoList">
+                <ul>
+                    <li>Открой <a href="https://docs.google.com/spreadsheets/d/1AgdBm6H3-Tugrc_VJwKF_StN_FmtceGLlYpccCojk0A/edit?usp=sharing" target="_blank">Google Sheet</a></li>
+                    <li>Создай копию таблицы</li>
+                    <li>Вставь из полученной excel все данные в лист "Выгрузка", в соответствии с названиями столбцов</li>
+                    <br>
+                    <li><b>Тонкости, которые следует учесть:</b></li>
+                    <li>Если таблица зависает, вставляй данные порционно или создай новую таблицу на основе файла excel, а затем откопируй все формулы</li>
+                    <li>Столбец <b>C</b> имеет формулу, его трогать нельзя</li>
+                    <li>Даты должны быть в формате "2000-00-00T00:00:00", если у тебя вышли другие, проверь формат ячеек</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    background-color: #000;
+}
+
+.container-form {
+    display: grid;
+    place-content: center center; 
+}
+
+.container-info {
+    display: none;
+    place-content: center center;
+}
+
+.infoList {
+    display: grid;
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 320px;
+}
+
+.infoList>ul>li {
+    color: #eee;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color:Teal;
+    font-weight: 400;
+}
+
+.form {
+    display: grid;
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 600px;
+    padding: 20px;
+    width: 320px;
+}
+
+.subtitle {
+    color: #eee;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.title {
+    color: #eee;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.submit {
+    background-color: Teal;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+}
+
+.submit:active {
+    background-color: rgb(0, 82, 82);
+}
+
+.submit:hover {
+    box-shadow: 0px 0px 10px 0px rgb(0, 82, 82);
+}
+
+.container-values {
+    display: grid;
+    place-content: center center;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+label {
+    text-align: left;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+}
+
+.input-file {
+	position: relative;
+	display: inline-block;
+}
+
+.input-file span {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: middle;
+	color: rgb(255 255 255);
+	text-align: center;
+	border-radius: 12px;
+	background-color: Teal;
+	line-height: 22px;
+	height: 40px;
+    width: 100%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	transition: all 0.1s ease-in-out;
+}
+
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+ 
+.input-file:hover span {
+	box-shadow: 0px 0px 10px 0px rgb(0, 82, 82);
+}
+.input-file:active span {
+	background-color: rgb(0, 82, 82);
+}
+ 
+.input-file input[type=file]:disabled + span {
+	background-color: #eee;
+}
+
+.inst-button {
+    margin-top: 5px;
+}
+
+.info-block {
+   display: none;
+   margin-top: 10px;
+   width: 320px;
+}
+
+.info {
+    margin-top: 0;
+    background-color: rgb(197, 131, 51);
+}
+
+.info:hover {
+    color: black;
+    background-color: rgb(250, 173, 78);
+}
